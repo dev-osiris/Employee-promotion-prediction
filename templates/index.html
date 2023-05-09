@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    
+    <title>Employee Promotino Prediction</title>
+</head>
+<body>
+    <header class='speaker-form-header'>
+        <h1>Employee Promotion Prediction</h1>
+        <p><em>
+            Fill details of the employee to check whether they should be promoted
+            or not.
+            <br>
+            All fields are necessary. 
+        </em></p>
+    </header>
+
+    <form method='post' class='speaker-form'>
+        
+        <fieldset class='legacy-form-row'>
+            <legend>Education</legend>
+            <input id='high_school'
+            name='education_level'
+            type='radio'
+            value='1' 
+            checked />
+            <label for='high_school' class='radio-label'>High school</label>
+            <input id='btech'
+            name='education_level'
+            type='radio'
+            value='2' />
+            <label for='btech' class='radio-label'>Btech</label>
+            <input id='masters'
+            name='education_level'
+            type='radio'
+            value='3' />
+            <label for='masters' class='radio-label'>Masters</label>
+        </fieldset>
+        
+        <fieldset class='legacy-form-row'>
+            <legend>Gender</legend>
+            <input id='male'
+            name='gender'
+            type='radio'
+            value='0' 
+            checked />
+            <label for='male' class='radio-label'>Male</label>
+            <input id='female'
+            name='gender'
+            type='radio'
+            value='1' />
+            <label for='female' class='radio-label'>Female</label>
+        </fieldset>
+
+        <div class='form-row'>
+            <label for='trainings'>Num of trainings</label>
+            <input id='trainings' name='training' type='number' placeholder="values 0 - 5" max="5" min="0" />
+        </div>
+
+        <div class='form-row'>
+            <label for='age'>Age</label>
+            <input id='age' name='age' type='number' placeholder="values 20 - 60" min="20" max="60" />
+        </div>
+
+        <div class='form-row'>
+            <label for='prev_yr_ratings'>Prev year ratings</label>
+            <input id='prev_yr_ratings' name='prev_yr_ratings' type='number'
+                   placeholder="values 1 - 5" min="1" max="5" />
+        </div>
+
+        <div class='form-row'>
+            <label for='service_len'>Length of service</label>
+            <input id='service_len' name='service_len' type='number'
+                   placeholder="values 1 - 37" min="1" max="37" />
+        </div>
+
+        <fieldset class='legacy-form-row'>
+            <legend>KPIs met > 80% ?</legend>
+            <input id='yes'
+            name='kpi'
+            type='radio'
+            value='1' 
+            checked />
+            <label for='yes' class='radio-label'>Yes</label>
+            <input id='no'
+            name='kpi'
+            type='radio'
+            value='0' />
+            <label for='no' class='radio-label'>No</label>
+        </fieldset>
+
+        <fieldset class='legacy-form-row'>
+            <legend>Awards won?</legend>
+            <input id='yes'
+            name='awards'
+            type='radio'
+            value='1' 
+            checked />
+            <label for='yes' class='radio-label'>Yes</label>
+            <input id='no'
+            name='awards'
+            type='radio'
+            value='0' />
+            <label for='no' class='radio-label'>No</label>
+        </fieldset>
+
+        <div class='form-row'>
+            <label for='train_score'>Avg train score</label>
+            <input id='train_score' name='train_score' type='number'
+                   placeholder="values 40 - 99" min="40" max="99" />
+        </div>
+
+        <div class='form-row'>
+            <button type="submit">Submit</button>
+        </div>
+
+        <div class='form-row'>
+            <label for='result'>Result</label>
+            <input id='result' name='result' type='text' placeholder="{{entry}}" />
+        </div>
+
+    </form>
+</body>
+</html>
