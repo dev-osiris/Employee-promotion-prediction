@@ -111,6 +111,12 @@ body {
   background-color: #407FC7;
 }
 
+.footer{
+  background-color: rgb(128 128 128 / 12%);
+  padding: 3% 5%;
+  text-align: center;
+  margin-top: 10%;
+}
 .footer > a{
   color: grey;
   text-decoration: none;
